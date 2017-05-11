@@ -10,7 +10,7 @@
 //*/
 //
 //// A function that receives 2 arguments (numbers), adds them together, and console logs the answer.
-//function addTogether (arg1, arg2){.    
+//function addTogether (arg1, arg2){   
 //	return arg1 + arg2; 
 //}
 //
@@ -29,8 +29,6 @@
 //// to the back of the array. Calling the function over and over should log each item in the array in turn, going back to the 
 //// start after the last item, infinitely. 
 //
-//
-////HELPPPPPPPPP
 //
 //function sayMyName (){
 //	console.log(firstname[0]);
@@ -59,15 +57,16 @@
 //
 //}
 //
-//// A function that rounds any number to the nearest multiple of 42 and returns it. This one has some math in it.
-////function roundTo42 (num){
-//
-//
-//
+// A function that rounds any number to the nearest multiple of 42 and returns it. This one has some math in it.
+function roundTo42 (num){
+	return Math.round(num/42) * 42;
+}
+
+
 //// A function that logs â€œThe answer to the question is â€ followed by whatâ€™s returned from the above function with 37 
 //// as the argument.
 //
-////function roundTo42 (37)
+////sorry I have to tap out for this one...
 //
 //
 //// A function that receives one argument, and logs something different depending of if the number is above 212, below 32, 
@@ -153,45 +152,61 @@
 //
 //// A variable set to an array containing every letter in the alphabet (as strings) and every number for 0 through 9.
 //
-var alphabetNumbers = [ 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 0, 1, 2, 3, 4, 5, 6, 7, 8, 9,];
+//var alphabetNumbers = [ 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 0, 1, 2, 3, 4, 5, 6, 7, 8, 9,];
 //
-//// A function that picks a random item from the above array and returns it.
+//// A function that picks a random item from the above array and returns it
+//function pickRandomItem () 	{
+//	var randomItem = alphabetNumbers[ Math.floor( Math.random() * alphabetNumbers.length)]	//return randomItem 
+//}
+//
+////A function that calls the above function 8 times, each time adding the returned value to a string, generating an eight 
+////character long random alphanumeric string
+//function alphanumericString (){ 
+//	var formstring = "";
+//	formstring += alphabetNumbers[ Math.floor( Math.random() * alphabetNumbers.length)];
+//	formstring += alphabetNumbers[ Math.floor( Math.random() * alphabetNumbers.length)];
+//	formstring += alphabetNumbers[ Math.floor( Math.random() * alphabetNumbers.length)];
+//	formstring += alphabetNumbers[ Math.floor( Math.random() * alphabetNumbers.length)];
+//	formstring += alphabetNumbers[ Math.floor( Math.random() * alphabetNumbers.length)];
+//	formstring += alphabetNumbers[ Math.floor( Math.random() * alphabetNumbers.length)];
+//	formstring += alphabetNumbers[ Math.floor( Math.random() * alphabetNumbers.length)];
+//	formstring += alphabetNumbers[ Math.floor( Math.random() * alphabetNumbers.length)];
+//	return formstring;
+//}
+////
+////console.log(alphanumericString());
+//
+//// A variable called counter, thatâ€™s just the number 0.
+//
+var counter = 0;
 
-function pickRandomItem () {
-	var randomItem = alphabetNumbers[ Math.floor( Math.random() * alphabetNumbers.length)];
-	return randomItem 
-}
-	
 
-// A function that calls the above function 8 times, each time adding the returned value to a string, generating an eight 
-// character long random alphanumeric string.
-
-function call8times (){
-
-	pickRandomItem() += pickRandomItem(); += pickRandomItem(); += pickRandomItem(); += pickRandomItem(); +=pickRandomItem(); += pickRandomItem(); +=pickRandomItem());
-}
-
-// A variable called counter, thatâ€™s just the number 0.
-
-var counter = 0
 
 // A function that adds 0.5 to that last number variable, then console logs it, but only if the number is still below 1000.
 
-function addAHalf ()}{
-	c
+function addAHalf (){
+	counter += 0.5;
+	if (counter < 1000) {
+		console.log(counter);
+	}
 }
 
 // A function that sets an interval for 1/30th of a second to call that last function. Once you get that working, 
 // consider how you might use logic like this to animate something on a webpage, such as the css left value of an element, 
 // making it slide to the right. Yep, animation is not really that complex.
 
+function callAddAHalf(){
+setInterval(addAHalf, 33)
+}
 
 // A function that cancels that timeout. Obviously, youâ€™ll need to call it pretty quickly after starting the timeout to see the effect.
 
+clearInterval(callAddAHalf);
 
-// Bonus: Here's some code to fetch a DIV from the DOM, and adjust it's css left value. 
-// Work that into your interval function to make some animation happen.
-	// document.getElementById("myDiv").style.left = "100px";
+//// Bonus: Here's some code to fetch a DIV from the DOM, and adjust it's css left value. 
+//// Work that into your interval function to make some animation happen.
+//	
+//	//document.getElementById("myDiv").style.left = "100px";
 
 
 

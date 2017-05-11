@@ -1,3 +1,7 @@
+////Delete // to activate function
+
+
+
 //console.log("Hello Cassandra from main.js!");
 ///*
 //Week 5 - Exercises
@@ -14,7 +18,7 @@
 //	return arg1 + arg2; 
 //}
 //
-////console.log(addTogether(8,2));
+//console.log(addTogether(8,2));
 //
 //// A function that receives 1 argument (numbers), multiplies it by 2, and returns the answer.
 //function multiplyTogether (arg){
@@ -57,16 +61,16 @@
 //
 //}
 //
-// A function that rounds any number to the nearest multiple of 42 and returns it. This one has some math in it.
-function roundTo42 (num){
-	return Math.round(num/42) * 42;
-}
-
-
+////A function that rounds any number to the nearest multiple of 42 and returns it. This one has some math in it.
+////function roundTo42 (num){
+//	return Math.round(num/42) * 42;
+//}
+//
+//
 //// A function that logs â€œThe answer to the question is â€ followed by whatâ€™s returned from the above function with 37 
 //// as the argument.
 //
-////sorry I have to tap out for this one...
+//	//sorry I have to tap out for this one...
 //
 //
 //// A function that receives one argument, and logs something different depending of if the number is above 212, below 32, 
@@ -174,35 +178,37 @@ function roundTo42 (num){
 //	return formstring;
 //}
 ////
-////console.log(alphanumericString());
+//
+//console.log(alphanumericString());
 //
 //// A variable called counter, thatâ€™s just the number 0.
 //
-var counter = 0;
-
-
-
-// A function that adds 0.5 to that last number variable, then console logs it, but only if the number is still below 1000.
-
-function addAHalf (){
-	counter += 0.5;
-	if (counter < 1000) {
-		console.log(counter);
-	}
-}
-
-// A function that sets an interval for 1/30th of a second to call that last function. Once you get that working, 
-// consider how you might use logic like this to animate something on a webpage, such as the css left value of an element, 
-// making it slide to the right. Yep, animation is not really that complex.
-
-function callAddAHalf(){
-setInterval(addAHalf, 33)
-}
-
-// A function that cancels that timeout. Obviously, youâ€™ll need to call it pretty quickly after starting the timeout to see the effect.
-
-clearInterval(callAddAHalf);
-
+//var counter = 0;
+//
+//
+//
+//// A function that adds 0.5 to that last number variable, then console logs it, but only if the number is still below 1000.
+//
+//function addAHalf (){
+//	counter += 0.5;
+//	if (counter < 1000) {
+//		console.log(counter);
+//	}
+//}
+//
+//// A function that sets an interval for 1/30th of a second to call that last function. Once you get that working, 
+//// consider how you might use logic like this to animate something on a webpage, such as the css left value of an element, 
+//// making it slide to the right. Yep, animation is not really that complex.
+//
+//function callAddAHalf(){
+//	var addTime = setInterval(addAHalf, 33);
+//}
+//
+//// A function that cancels that timeout. Obviously, youâ€™ll need to call it pretty quickly after starting the timeout to see the effect.
+//
+//function stopAddAHalf(){
+//	clearInterval(addTime);
+//}
 //// Bonus: Here's some code to fetch a DIV from the DOM, and adjust it's css left value. 
 //// Work that into your interval function to make some animation happen.
 //	
